@@ -6,6 +6,6 @@ Description : This Application contains 4 major parts.
 * Calculates Hypotenuse by taking two sides as input.
 * Calculates Area by taking base and height as input.
 
-Tech Stack : HTML, CSS and JS
+Tech Stack : React
 
 Live Project is [here](https://jsywy7.csb.app/area-of-triangle).
