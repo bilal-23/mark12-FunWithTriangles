@@ -8,4 +8,4 @@ Description : This Application contains 4 major parts.
 
 Tech Stack : React
 
-Live Project is [here](https://jsywy7.csb.app/area-of-triangle).
+Live Project is [here](https://5ffuvq.csb.app/).
