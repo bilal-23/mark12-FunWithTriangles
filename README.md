@@ -8,4 +8,4 @@ Description : This Application contains 4 major parts.
 
 Tech Stack : React
 
-Live Project is [here](https://5ffuvq.csb.app/).
+Live Project is [here](https://mark12-trianglesss.netlify.app/).
