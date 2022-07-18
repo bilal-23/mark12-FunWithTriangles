@@ -27,9 +27,10 @@
 }
 .output {
   font-size: 2rem;
+  height: 5rem;
   margin-top: -3rem;
-  margin-bottom: 5rem;
   font-weight: 600;
+  text-align: center;
   text-transform: capitalize;
   color: var(--secondary-color);
 }

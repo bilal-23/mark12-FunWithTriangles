@@ -175,7 +175,7 @@ export default function Quiz() {
           </div>
         </form>
         {output && (
-          <div className="output">
+          <div className={styles.output}>
             <p className={styles.output}>{output}</p>
           </div>
         )}

@@ -39,7 +39,7 @@ export default function Area() {
       setSuccess("Area of this triangle is " + result);
       setError(false);
     } else {
-      setError("Give inputs does not form a triangle");
+      setError("Given inputs does not form a triangle");
       setSuccess(false);
     }
   }

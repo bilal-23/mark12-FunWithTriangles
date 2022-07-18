@@ -140,6 +140,7 @@ input[type="number"] {
 }
 .output {
   display: flex;
+  height: 10rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -148,7 +149,6 @@ input[type="number"] {
 .error,
 .success {
   text-align: center;
-  margin: 5rem 0;
   font-size: 2.4rem;
   color: #ff3353;
   font-weight: 600;
