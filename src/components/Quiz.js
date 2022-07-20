@@ -106,18 +106,20 @@ const answers = {
 export default function Quiz() {
   const [userAns, setUserAns] = useState({});
   const [output, setOutput] = useState();
-  const formRef = useRef();
+  // const formRef = useRef();
 
   function answerHandler(answer, question) {
     let ans = userAns;
     ans[question] = answer;
-    console.log(ans);
     setUserAns(ans);
   }
+
 
   function QuizSubmitHandler(e) {
     e.preventDefault();
     let score = 0;
+    // let formData = new FormData(formRef.current);
+    // console.log(formData.values())
     const keys = Object.keys(userAns);
     keys.forEach((item) => {
       if (answers[item] === userAns[item]) {
@@ -135,12 +137,12 @@ export default function Quiz() {
             Each correct answer will increase your sccore by 1
           </p>
         </header>
-        <form className="container" ref={formRef} onSubmit={QuizSubmitHandler}>
+        <form className="container" onSubmit={QuizSubmitHandler}>
           <div className={styles.question_grp}>
             {quizQuestions.map((item, index) => {
               return (
                 <>
-                  <div className={styles.question} key={index}>
+                  <div className={styles.question} key={index + Math.random()}>
                     <p className="medium-text">{item.questionNumber}.</p>
                     <p className="medium-text">{item.question}</p>
                   </div>
@@ -148,7 +150,7 @@ export default function Quiz() {
                     {item.options.map((option, index) => {
                       return (
                         <>
-                          <div key={index}>
+                          <div key={index + Math.random()}>
                             <input
                               type="radio"
                               id={option.value}
