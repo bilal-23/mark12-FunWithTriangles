@@ -1,7 +1,6 @@
 .navbar {
   padding: 2rem 1rem;
   padding-top: 3rem;
-  width: 100vw;
   margin: 0 auto;
   background-color: #111;
   display: flex;
@@ -27,7 +26,7 @@
 .nav_link_container li::after {
   position: absolute;
   content: "";
-  width: 10rem;
+  width: 100%;
   left: 50%;
   transform: translateX(-50%);
   height: 2px;
